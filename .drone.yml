@@ -1,0 +1,18 @@
+kind: pipeline
+type: docker
+name: xd
+
+steps:
+- name: flake8 drakcore
+  image: python:3.8-buster
+  commands:
+    - echo xd
+node:
+   purpose: generic
+trigger:
+  branch:
+  - master
+  event:
+    include:
+    - push
+    - pull_request
