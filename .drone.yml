@@ -11,7 +11,7 @@ node:
    purpose: generic
 trigger:
   branch:
-  - master
+  - main
   event:
     include:
     - push
